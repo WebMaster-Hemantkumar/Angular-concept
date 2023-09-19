@@ -1,0 +1,8 @@
+
+
+
+<a *ngFor="let p of Persons"  (click)="goToProductDetails(id)"
+  [routerLink]="['/persondetails', p.id]">
+  <br/>
+  {{ p.name }}
+</a>

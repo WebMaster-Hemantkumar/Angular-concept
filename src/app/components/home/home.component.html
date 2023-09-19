@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>TEAMS DETAILS</h2>
+    <app-spinner >
+       
+    </app-spinner>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>s.no</th>
+               <th>nameofteam</th> 
+               <th>player</th>
+               <th>scores</th>
+               <th>win</th>
+               <th>topscorer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of team;let i=index">
+                {{i+1}}
+                <td>{{t.nameofteam}}</td>
+                <td>{{t.player}}</td>
+                <td>{{t.scores}}</td>
+                <td>{{t.win}}</td>
+                <td>{{t.topscorer}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

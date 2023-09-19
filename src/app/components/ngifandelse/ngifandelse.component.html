@@ -1,0 +1,18 @@
+
+
+<div *ngif="isLoggedIn">
+  many congratulations to you
+</div>
+
+<div *ngif="!isLoggedIn">
+  for your achievement  
+</div>
+
+<div *ngif="isLoggedIn; else loggedOut">
+ without pain nothing gain
+</div>
+
+<ng-template #loggedOut>
+ everything is possible
+</ng-template>
+

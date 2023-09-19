@@ -1,0 +1,23 @@
+
+
+
+<ng-container
+
+*ngif="isLoggedIn; then loggedIn; else loggedOut">
+  
+</ng-container>
+
+<ng-template #loggedIn>
+    <div>
+        <p>hello,how are you</p>
+    </div>
+
+</ng-template>
+
+<ng-template #loggedOut>
+    <div>
+        <p>everything is fine</p>
+    </div>
+    
+</ng-template>
+
